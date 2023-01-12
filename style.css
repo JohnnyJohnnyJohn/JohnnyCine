@@ -1,6 +1,7 @@
 body {
     background-image: url("img/bande_film.png");
-    background-position: 20% -100%;
+    background-position: 20% 100%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
@@ -44,5 +45,6 @@ h2 {
     border-style: solid;
     border-color: white;
     border-radius: 10px;
+    visibility: hidden;
 }
 

@@ -16,9 +16,11 @@ async function loadMovies() {
 
     if (data.Response == "True") {
         document.getElementById("resultat").style.visibility = "visible";
+        document.getElementById("poster").style.visibility = "visible";
         afficherFilm(data);
     } else {
         document.getElementById("resultat").style.visibility = "hidden";
+        document.getElementById("poster").style.visibility = "hidden";
     }
 }
 
@@ -78,7 +80,7 @@ function noenter() {
     return !(window.event && window.event.keyCode == 13);
 }
 
-window.addEventListener("keyup", function (e) {
+window.addEventListener("keyup", function () {
     
     setTimeout(() => {
         searchMovies();
