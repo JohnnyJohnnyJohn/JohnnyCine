@@ -1,4 +1,7 @@
 body {
+    background-image: url("img/bande_film.png");
+    background-position: 20% -100%;
+    background-repeat: no-repeat;
     /* background-color: black;
     color: mintcream; */
 }
