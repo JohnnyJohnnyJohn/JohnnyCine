@@ -1,0 +1,47 @@
+body {
+    /* background-color: black;
+    color: mintcream; */
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    font-family: Tahoma;
+    text-align: center; 
+}
+
+h2 {
+    tab-size: 4;
+}
+
+.outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.inner {
+    width: 30%;
+    display:inline-block;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+#resultat {
+    gap: 10px;
+    visibility: hidden;
+}
+
+#description {
+    width: 50vw;
+}
+
+#poster {
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+

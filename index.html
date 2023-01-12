@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JohnnyCiné</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="omdb.js" defer></script>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function noenter() {
+      return !(window.event && window.event.keyCode == 13); }
+  </script>
+
+  <div class="container">
+    <div class="row my-2">
+      <div class="col">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h1 class="display-1">JOHNNYCINE</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <img src="" class="card-img-left" id="poster" width="100%">
+      </div>
+      <div class="col-5">
+        
+        <div class="card" id="resultat" style="width: 100%;">
+
+          <div class="card-body">
+            <h5 class="card-title text-center" id="title"></h5>
+            <p class="card-text" id="plot"></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="year"></li>
+            <li class="list-group-item" id="actors"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-3">
+        <nav class="navbar">
+          <div class="container-fluid d-flex justify-content-end">
+            <form class="d-flex">
+              <input class="form-control" type="text" id="searchBar" placeholder="Search"
+                aria-label="Search" list="options" onkeypress="return noenter()" autocomplete="off" required>
+              <button type="button" onclick="loadMovies()" class="btn btn-primary">Search</button>
+              <datalist id="options">
+              </datalist>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
