@@ -74,6 +74,10 @@ function afficherFilm(film) {
     actorsFilm.innerText = "Actors : " + film.Actors;
 }
 
+function noenter() {
+    return !(window.event && window.event.keyCode == 13);
+}
+
 window.addEventListener("keyup", function (e) {
     
     setTimeout(() => {
