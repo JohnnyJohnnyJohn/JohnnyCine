@@ -36,10 +36,13 @@ async function searchMovies() {
             let option2 = document.getElementById("option2");
             let option3 = document.getElementById("option3");
             let option4 = document.getElementById("option4");
+            let option5 = document.getElementById("option5");
+            let option6 = document.getElementById("option6");
+            let option7 = document.getElementById("option7");
+            let option8 = document.getElementById("option8");
         } else {            
             let option1 = document.createElement("option");
             option1.setAttribute("id", "option1");
-            option1.setAttribute("onclick", "loadMovies()");
             datalist.appendChild(option1);
 
             let option2 = document.createElement("option");
@@ -53,17 +56,41 @@ async function searchMovies() {
             let option4 = document.createElement("option");
             option4.setAttribute("id", "option4");
             datalist.appendChild(option4);
+
+            let option5 = document.createElement("option");
+            option5.setAttribute("id", "option5");
+            datalist.appendChild(option5);
+
+            let option6 = document.createElement("option");
+            option6.setAttribute("id", "option6");
+            datalist.appendChild(option6);
+
+            let option7 = document.createElement("option");
+            option7.setAttribute("id", "option7");
+            datalist.appendChild(option7);
+
+            let option8 = document.createElement("option");
+            option8.setAttribute("id", "option8");
+            datalist.appendChild(option8);
         }
         option1.value = data.Search[0].Title;
         option2.value = data.Search[1].Title;
         option3.value = data.Search[2].Title;
         option4.value = data.Search[3].Title;
+        option5.value = data.Search[4].Title;
+        option6.value = data.Search[5].Title;
+        option7.value = data.Search[6].Title;
+        option8.value = data.Search[8].Title;
     } else {
         if (datalist.children.length != 0) {
             document.getElementById("option1").remove();
             document.getElementById("option2").remove();
             document.getElementById("option3").remove();
             document.getElementById("option4").remove();
+            document.getElementById("option5").remove();
+            document.getElementById("option6").remove();
+            document.getElementById("option7").remove();
+            document.getElementById("option8").remove();
         }
     }
 }

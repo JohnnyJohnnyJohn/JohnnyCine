@@ -41,9 +41,9 @@ h2 {
 }
 
 #poster {
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
-    border-color: white;
+    border-color: black;
     border-radius: 10px;
     visibility: hidden;
 }
