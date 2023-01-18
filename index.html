@@ -11,14 +11,14 @@
 
 <body>
     
-  <div class="p-4 text-bg-dark">
+  <div class="p-4 text-center text-bg-dark bg-gradient">
     <h1>JOHNNYCINE</h1>
     <nav class="navbar">
       <div class="container-fluid d-flex justify-content-center">
         <form class="d-flex">
           <input class="form-control" type="text" id="searchBar" placeholder="Search"
             aria-label="Search" list="options" onkeypress="return noenter()" autocomplete="off" required>
-          <button type="button" onclick="loadMovies()" class="btn btn-primary">Search</button>
+          <button type="button" onclick="loadMovies()" class="btn btn-primary bg-gradient">Search</button>
           <datalist id="options">
           </datalist>
         </form>
@@ -29,11 +29,11 @@
   <div class="container">
     <div class="row mt-4">
       <div class="col-3">
-        <img src="" class="card-img-left" id="poster" width="100%">
+        <img src="" class="card-img-left shadow" id="poster" width="100%">
       </div>
       <div class="col-9">
         
-        <div class="card h-100 text-bg-dark" id="resultat" style="width: 100%;">
+        <div class="card h-100 text-bg-dark bg-gradient shadow" id="resultat" style="width: 100%;">
 
           <div class="card-body">
             <h5 class="card-title text-center" id="title"></h5>
@@ -47,7 +47,6 @@
       </div>
     </div>
   </div>
-
 
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,43 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
 body {
     background-image: url("img/bande_film.png");
     background-position: 20% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-
-h1 {
-    margin: 0;
-    font-size: 48px;
-    font-family: Tahoma;
-    text-align: center; 
-}
-
-h2 {
-    tab-size: 4;
-}
-
-.outer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-}
-
-.inner {
-    width: 30%;
-    display:inline-block;
-    margin: auto;
-    box-sizing: border-box;
-    text-align: justify;
+    font-family: "Quicksand", Helvetica, Arial, sans-serif;
 }
 
 #resultat {
-    gap: 10px;
     visibility: hidden;
-}
-
-#description {
-    width: 50vw;
 }
 
 #poster {
