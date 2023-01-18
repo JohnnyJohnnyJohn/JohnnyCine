@@ -2,7 +2,8 @@
 
 body {
     background-image: url("img/bande_film.png");
-    background-position: 20% 100%;
+    background-position: 15vw 100%;
+    background-size: auto 60vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: "Quicksand", Helvetica, Arial, sans-serif;
