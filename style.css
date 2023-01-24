@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 
 body {
+    background-color: #fff;
     background-image: url("img/bande_film.png");
     background-position: 15vw 100%;
     background-size: auto 60vh;
@@ -9,15 +10,17 @@ body {
     font-family: "Quicksand", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
 #resultat {
     visibility: hidden;
+    width: 100%;
 }
 
 #poster {
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 7px;
     visibility: hidden;
 }
 
